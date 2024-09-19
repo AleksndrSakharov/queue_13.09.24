@@ -2,13 +2,21 @@
 #include <iostream>
 #include <algorithm>
 #include <stdexcept>
+#include <stdint.h>
 // #include <>
 
+struct Date
+{
+    std::byte day;
+    std::byte month;
+    uint16_t year;
+    uint32_t datecode;
+};
 
 struct Diag
 {
     std::string desis;
-    std::string pils;
+    std::string pills;
 };
 
 
@@ -34,10 +42,4 @@ public:
 };
 
 
-struct Date
-{
-    std::byte day;
-    std::byte month;
-    uint16_t year;
-    uint32_t datecode;
-};
+
